@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--讓網頁在手機上有正確的顯示比例-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .size-select {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .size-option {
+                display: inline-block;
+                border: 2px solid #000;
+                padding: 5px 0;
+                border-radius: 25px;
+                width: 50px;
+                text-align: center;
+                cursor: pointer;
+                font-family: "Noto Sans TC", sans-serif;
+            }
+
+            .size-option.active {
+                color: #fff;
+                background-color: #000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul class="size-select">
+            <li id="sol" class="size-option" onclick="changeSize(this)">S</li>
+            <li id="sol" class="size-option active" onclick="changeSize(this)">
+                M
+            </li>
+            <li id="sol" class="size-option" onclick="changeSize(this)">L</li>
+            <li id="sol" class="size-option" onclick="changeSize(this)">XL</li>
+        </ul>
+
+        <script type="text/javascript">
+            /*function changeSize(option) {
+                // 把全部的size-option 都拿掉 active
+                document.getElementById("so1").classList.remove("active");
+                document.getElementById("so1").classList.remove("active");
+                document.getElementById("so1").classList.remove("active");
+                document.getElementById("so1").classList.remove("active");
+
+                // 把按下的加上 active
+                option.classList.add("active");
+            }*/
+
+            function changeSize(option) {
+                // 把全部的size-option 都拿掉 active
+                var options = document.getElementsByClassName("size-option");
+                for (let i = 0; i < options.length; i++) {
+                    options[i].classList.remove("active");
+                }
+
+                // 把按下的人加上 active
+                option.classList.add("active");
+            }
+        </script>
+    </body>
+</html>
