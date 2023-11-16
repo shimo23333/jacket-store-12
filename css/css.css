@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: rgb(250, 249, 249);
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.marquee{
+    background-color: black;
+    width: 100%;
+    color: #ccc;
+    padding: 8px;
+    font-size: 8pt;
+}
+
+/*nav*/
+.nav{
+    border-bottom: 1px solid #ccc;
+    
+}
+.nav .container.nav-container{
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .container .nav-container-grid{
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+    background-color: rgb(250, 249, 249);
+}
+.nav .container .nav-container-grid .logo{
+    width: 100px;
+    padding: 0 10px 0 0 ;
+}
+.nav .container .nav-container-grid .menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 0;
+    grid-column-gap: 30px;
+    font-size: 11pt;
+}
+.nav .container ul li{
+    list-style: none;
+    margin: 0;
+}
+.nav .container a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*row1*/
+.row1{
+    background-color: rgb(250, 249, 249);
+}
+.row1 .container .row1-container-grig .title-grid .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.row1 .container .row1-container-grig .title{
+    font-size: 25pt;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.row1 .container .row1-container-grig .title-grid{
+    display: grid;
+    grid-template-columns:auto 50px;
+    grid-column-gap: 15px;
+}
+.row1 .container .row1-container-grig .title-grid .search-icon-btn{
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 10pt;
+}
+.row1 .container .row1-container-grig .search-list{
+    display: grid;
+    grid-template-columns:auto 300px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 10pt;
+    align-items: center;
+}
+.row1 .container .row1-container-grig .search-list .search-list-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.row1 .container .row1-container-grig .title-grid .search-list .text{
+    color: #666;
+}
+.row1 .container .row1-container-grig .search-list .search-list-grid .item.active{
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+/*row2*/
+.row2{
+    background-color: rgb(250, 249, 249);
+}
+.row2 .container .title {
+    display: grid;
+    grid-template-columns: auto 200px;
+    align-items: center;
+    font-size: 10pt;
+    padding: 20px 0;
+}
+.row2 .container .title .Item-Found {
+    color: #666;
+}
+.row2 .container .title .title_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.row2 .container .title .title_grid .button.grey{
+    color: #666;
+}
+.row2 .container .title .title_grid .button.black{
+    color: #000;
+    font-weight: bold;
+}
+.row2 .container .row2-container-grid .left-area .Items-found-block {
+    background-color: rgb(241, 241, 239);
+    width: 100%;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    line-height: 50px;
+    align-items: center;
+}
+/*左邊下拉選單*/
+.row2 .container .row2-container-grid .left-area .drop-down .drop-down-grig{
+    display: grid;
+    grid-template-columns: 35px auto;
+    padding: 5px 20px;
+    align-items: center;
+    padding: 0;
+}
+.row2 .container .row2-container-grid{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 15px;
+}
+/*左邊*/
+.row2 .container .row2-container-grid .left-area{
+    display: grid;
+    grid-template-rows: auto 50px 50px 50px;
+    grid-row-gap: 10px;
+}
+/*右邊*/
+.row2 .container .row2-container-grid .right-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+.row2 .container .row2-container-grid .right-area .commodity{
+    text-align: center;
+}
+.row2 .container .row2-container-grid .right-area .commodity .commodity-picture{
+    width: 100%;
+}
+.row2 .container .row2-container-grid .right-area .commodity .product-desciption{
+    padding: 10px 0;
+    color: #666;
+    font-size: 11pt;
+}

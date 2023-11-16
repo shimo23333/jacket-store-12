@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    background-color: rgb(250, 249, 249);
+}
+html{
+    height: 100%;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+/*下面三塊的container*/
+.inner-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.marquee{
+    background-color: black;
+    width: 100%;
+    color: #ccc;
+    padding: 8px;
+    font-size: 8pt;
+}
+
+/*nav*/
+.nav{
+    border-bottom: 1px solid #ccc;
+    
+}
+.nav .container.nav-container{
+    display: grid;
+    grid-template-columns:auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .container .nav-container-grid{
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+}
+.nav .container .nav-container-grid .logo{
+    width: 100px;
+    padding: 0 10px 0 0 ;
+}
+.nav .container .nav-container-grid .menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 0;
+    grid-column-gap: 30px;
+    font-size: 11pt;
+}
+.nav .container ul li{
+    list-style: none;
+    margin: 0;
+}
+.nav .container a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*三等分*/
+
+.Trisection_grid{
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    background-color: rgb(250, 249, 249);
+}
+
+/*row1左邊的區塊*/
+.left-introduction-liock{
+    height: 100%;
+    border-right: 1px solid #ccc;
+    
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+    grid-row-gap: 260px;
+    height: 100%;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container  .under .under-grid{
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/*麵包屑*/
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .breadcrumb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 10pt;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .breadcrumb > .item::after{
+    content: '/';
+    margin: 0 5px 0 10px;
+    opacity: 0.3;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .breadcrumb >.item:last-child::after{
+    content: none;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .breadcrumb > .item{
+    color: #666;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .breadcrumb > .item.active{
+    color: #666;
+}
+/*麵包屑結束*/
+
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .word .title{
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container .top .word .price{
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.left-introduction-liock .left-introduction-liock-grid .inner-container.row1 .under .under-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.arrow{
+    position: relative;
+}
+.line-1 {
+    position: absolute;
+    display: block;
+    width: 10px;
+    right: 10px;
+    height:2.5px;
+    top: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius:50px;
+}
+.line-2 {
+    position: absolute;
+    display: block;
+    width: 10px;
+    right: 10px;
+    height:2.5px;
+    top: 10px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(90deg);
+    border-radius:50px;
+}
+
+/*row2中間圖片的區塊*/
+.inner-container.row2{
+    text-align: center;
+}
+
+/*row3右邊的區塊*/
+.right-introduction-liock{
+    border-left: 1px solid #ccc;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid{
+    margin: 20px 0 10px 0;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .Color-grid{
+    margin: 20px 0 10px 0;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid .title-grid2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid .title-grid2 .title-Choose{
+    color: #000;
+    font-weight: bold;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid .title-grid2 .title-Size-Guide{
+    color: #666;
+    font-size: 11pt;
+}
+
+/*SML的CSS*/
+.size-select{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.size-option{
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.size-option.active{
+    color: white;
+    background-color: #000;
+}
+/*SML結束*/
+
+/*換色按鈕*/
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid ul.color-pickers{
+    display: grid;
+    position: relative;
+    grid-template-columns: 30px 30px 30px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid ul.color-pickers > li {
+    display: inline-block;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid .color-pickers .color-picker.brown{
+    background-color: rgb(118, 86, 58);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid .color-pickers .color-picker.black{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .title-grid .color-pickers .color-picker.blue{
+    background-color: rgb(0, 48, 180);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+/*白點*/
+.color-picker.active{
+    
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+/*換色按鈕結束*/
+
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .button_grid{
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin-top: 20px;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .button_grid .icon{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 11pt;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .text{
+    font-size: 10pt;
+    color: #ccc;
+    margin-top: 400px;
+}
+.right-introduction-liock .right-introduction-liock-grid .inner-container.row3 .button_grid .button{
+    background-color: #000;
+    border-radius: 20px;
+    color:white;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 11pt;
+    text-align: center;
+}

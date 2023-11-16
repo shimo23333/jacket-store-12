@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--讓網頁在手機上有正確的顯示比例-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>acw-ecommerce</title>
+        <link rel="stylesheet" type="text/css" href="css/css-2.css" />
+        <!--icon的連結-->
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+    </head>
+
+    <body>
+        <!--電腦選單-->
+        <nav class="nav">
+            <div class="marquee">
+                FREE FREE FREE FREE FREE FREE FREE FREE FREE FREE FREE FREE FREE
+                FREE FREE FREE FREE
+            </div>
+            <div class="container nav-container">
+                <div class="nav-container-grid">
+                    <a href="index.html"
+                        ><img class="logo" src="images//logo.svg"
+                    /></a>
+                    <ul class="menu">
+                        <li>
+                            <a href="#"
+                                ><div class="item active">Cotegary</div></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"> <div class="item">Collection</div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div class="item">Focus</div></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><div class="item">Service Point1</div></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"><div class="item">Assistance</div></a>
+                        </li>
+                        <li>
+                            <a href="#"><div class="item">Contacts</div></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-container-grid2">
+                    <div class="icon-button">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span>
+                        <span class="material-symbols-outlined">
+                            shopping_basket
+                        </span>
+                        <span class="material-symbols-outlined">
+                            person_filled
+                        </span>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="Trisection_grid">
+                <!--左邊的區塊-->
+                <div class="left-introduction-liock">
+                    <div class="left-introduction-liock-grid">
+                        <div class="inner-container row1">
+                            <div class="top">
+                                <!--麵包屑-->
+                                <div class="breadcrumb">
+                                    <span class="item">Home</span>
+                                    <span class="item">Category</span>
+                                    <span class="item active">Jackets</span>
+                                </div>
+
+                                <div class="word">
+                                    <div class="title">
+                                        Suilven Quilted Jacket
+                                    </div>
+                                    <div class="price">€1,192.00</div>
+                                </div>
+                            </div>
+
+                            <div class="under">
+                                <div class="Product-Info under-grid">
+                                    <div>Product Info</div>
+                                    <div class="arrow">
+                                        <div class="line-1"></div>
+                                    </div>
+                                    <!--下拉的隱藏介紹-->
+                                </div>
+                                <div class="Product-Info under-grid">
+                                    Cropped quilted jacket in textured nylon
+                                    with asymmetrical stitch detailing.Model is
+                                    190cm(6ft3) and is wearing size M.
+                                </div>
+                                <div class="Details under-grid">
+                                    <div>Details</div>
+                                    <div class="arrow">
+                                        <div class="line-1"></div>
+                                        <div class="line-2"></div>
+                                    </div>
+                                </div>
+                                <div class="Delivery&Returns under-grid">
+                                    <div>Delivery&Returns</div>
+                                    <div class="arrow">
+                                        <div class="line-1"></div>
+                                        <div class="line-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--中間的圖片區塊-->
+                <div class="mid-introduction-liock">
+                    <div class="mid-introduction-liock-grid">
+                        <div class="inner-container row2">
+                            <img id="photo" src="images/large-brown.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--右邊的圖片區塊-->
+                <div class="right-introduction-liock">
+                    <div class="right-introduction-liock-grid">
+                        <div class="inner-container row3">
+                            <div class="title-grid">
+                                <div class="title-grid2">
+                                    <div class="title-Choose">Choose Size</div>
+                                    <div class="title-Size-Guide">
+                                        Size Guide
+                                    </div>
+                                </div>
+                                <!--尺寸按鈕-->
+                                <ul class="size-select">
+                                    <li
+                                        id="sol"
+                                        class="size-option"
+                                        onclick="changeSize(this)"
+                                    >
+                                        XS
+                                    </li>
+                                    <li
+                                        id="sol"
+                                        class="size-option active"
+                                        onclick="changeSize(this)"
+                                    >
+                                        S
+                                    </li>
+                                    <li
+                                        id="sol"
+                                        class="size-option"
+                                        onclick="changeSize(this)"
+                                    >
+                                        M
+                                    </li>
+                                    <li
+                                        id="sol"
+                                        class="size-option"
+                                        onclick="changeSize(this)"
+                                    >
+                                        L
+                                    </li>
+                                    <li
+                                        id="sol"
+                                        class="size-option"
+                                        onclick="changeSize(this)"
+                                    >
+                                        XL
+                                    </li>
+                                    <li
+                                        id="sol"
+                                        class="size-option"
+                                        onclick="changeSize(this)"
+                                    >
+                                        XXL
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="title-grid">
+                                <div class="title-grid2">
+                                    <div class="title-Choose">Choose Color</div>
+                                </div>
+                                <!--換色按鈕-->
+                                <ul class="color-pickers">
+                                    <li>
+                                        <div
+                                            class="color-picker brown active"
+                                            onclick="changeColor('brown')"
+                                        ></div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="color-picker black"
+                                            onclick="changeColor('black')"
+                                        ></div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="color-picker blue"
+                                            onclick="changeColor('blue')"
+                                        ></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text">
+                                All contents of this website are the property of
+                                A-COLD-WALL*.
+                            </div>
+                            <div class="button_grid">
+                                <div class="icon">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>
+                                </div>
+                                <div class="button">Add to Card</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            /*SML按鈕*/
+            function changeSize(option) {
+                /*document
+                    .getElementsById("sol")
+                    .classList.remove("active");
+                document
+                    .getElementsById("sol")
+                    .classList.remove("active");
+                document
+                    .getElementsById("sol")
+                    .classList.remove("active");
+                document
+                    .getElementsById("sol")
+                    .classList.remove("active");
+                document
+                    .getElementsById("sol")
+                    .classList.remove("active");
+                document
+                    .getElementsById("sol")
+                    .classList.remove("active"); */
+
+                var options = document.getElementsByClassName("size-option");
+                for (let i = 0; i < options.length; i++) {
+                    options[i].classList.remove("active");
+                }
+
+                option.classList.add("active");
+            }
+
+            function changeColor(color) {
+                console.log(`這個顏色是:${color}`);
+                const photo = document.getElementById("photo");
+
+                /*如果選到藍色，取得id叫photo的照片，把他的src換成藍色照片*/
+                if (color == "blue") {
+                    photo.src = "images/large-blue.png";
+                }
+
+                /*如果選到棕色，取得id叫photo的照片，把他的src換成棕色照片*/
+                if (color == "brown") {
+                    photo.src = "images/large-brown.png";
+                }
+
+                /*如果選到黑色，取得id叫photo的照片，把他的src換成黑色照片*/
+                if (color == "black") {
+                    photo.src = "images/large-black.png";
+                }
+            }
+        </script>
+    </body>
+</html>
